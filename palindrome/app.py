@@ -1,10 +1,6 @@
 def is_palindrome(string: str) -> bool:
     string = string.replace(' ', '').lower()
-    if string == string[::-1]:
-        return True
-    else:
-        return False
-
+    return string == string[::-1]
 
 def run():
     palindrome = input("Type a word to verify if is palindrome: ")
